@@ -1,0 +1,49 @@
+:root {
+  --dark-blue-grey-0: #fafbff;
+  --dark-blue-grey-1: #e0e1e7;
+  --dark-blue-grey-2: #c6c7cf;
+  --dark-blue-grey-3: #adaeb6;
+  --dark-blue-grey-4: #95969e;
+  --dark-blue-grey-5: #7d7e86;
+  --dark-blue-grey-6: #66676e;
+  --dark-blue-grey-7: #4f5056;
+  --dark-blue-grey-8: #39393d;
+  --dark-blue-grey-9: #222225;
+  --dark-blue-grey-10: #0c0c0d;
+
+  /* Backgrounds */
+  --bg-primary: var(--dark-blue-grey-10);
+  --bg-secondary: var(--dark-blue-grey-9);
+  --bg-tertiary: var(--dark-blue-grey-8);
+
+  /* Text */
+  --text-primary: var(--dark-blue-grey-0);
+  --text-secondary: var(--dark-blue-grey-1);
+  --text-muted: var(--dark-blue-grey-3);
+  --text-disabled: var(--dark-blue-grey-5);
+
+  /* Borders */
+  --border-subtle: var(--dark-blue-grey-8);
+  --border-default: var(--dark-blue-grey-7);
+  --border-strong: var(--dark-blue-grey-6);
+
+  /* Surfaces */
+  --surface-1: var(--dark-blue-grey-10);
+  --surface-2: var(--dark-blue-grey-9);
+  --surface-3: var(--dark-blue-grey-8);
+  --surface-4: var(--dark-blue-grey-7);
+
+  /* Interactive States */
+  --hover-bg: var(--dark-blue-grey-8);
+  --active-bg: var(--dark-blue-grey-7);
+  --focus-bg: var(--dark-blue-grey-8);
+
+  /* Brand Color */
+  --primary: #5b5cf6;
+
+  --button-primary-bg: var(--primary);
+  --button-primary-text: var(--dark-blue-grey-0);
+
+  /* Height */
+  --control-height: 3.2rem;
+}
