@@ -3,6 +3,8 @@ const previewWindow = document.getElementById("previewWindow");
 const previewButtons = document.querySelectorAll(".preview-btn");
 
 async function loadPreview(name) {
+  loadPreviewStyles(name);
+  
   const response = await fetch(`previews/${name}/${name}.html`);
 
   const html = await response.text();
@@ -93,6 +95,20 @@ function initializeHeroCarousel() {
     dots[currentSlide].classList.add("active");
   }, 2500);
 
+}
+
+function loadPreviewStyles(name) {
+    // Remove the previous preview stylesheet
+    document
+        .querySelectorAll('link[data-preview-style]')
+        .forEach(link => link.remove());
+
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = `previews/${name}/${name}.css`;
+    link.dataset.previewStyle = 'true';
+
+    document.head.appendChild(link);
 }
 
 loadPreview("dashboard");
